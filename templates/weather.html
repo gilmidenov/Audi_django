@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+</head>
+<body>
+<div class="card shadow" style="width: 18rem; margin: 1em">
+    {% if temperature > 20 %}
+    <h1>Today: {{temperature}} grad Celsius, it is Hot</h1>
+    {% elif temperature < 0 %}
+    <h1> Today: {{temperature}} grad Celsius, it is Normal</h1>
+    {% elif temperature < -15 %}
+    <h1>Today: {{temperature}} grad Celsius, it is Cold</h1>
+    {% endif %}
+</div>
+
+</body>
+</html>
